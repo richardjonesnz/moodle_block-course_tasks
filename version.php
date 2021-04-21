@@ -20,6 +20,7 @@
  * @package   block_coursetasks
  * @copyright  2021 Richard Jones <richardnz@outlook.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @see https://www.udemy.com/user/brad-traversy/
  */
 defined('MOODLE_INTERNAL') || die();
 

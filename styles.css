@@ -1,0 +1,7 @@
+/* Styles for task list */
+.block_coursetasks-delete-item {
+    float:right;
+}
+.block_coursetasks-clear-tasks {
+    margin-top: 5px;
+}

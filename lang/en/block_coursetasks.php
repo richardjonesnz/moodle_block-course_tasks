@@ -20,6 +20,7 @@
  * @package   block_coursetasks
  * @copyright  2021 Richard Jones <richardnz@outlook.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @see https://www.udemy.com/user/brad-traversy/
  */
 // General strings.
 $string['pluginname'] = 'Course Tasks';
@@ -28,3 +29,6 @@ $string['pluginname'] = 'Course Tasks';
 $string['btn_add_task'] = 'Add task';
 $string['listing'] = 'List of tasks';
 $string['btn_clear_tasks'] = 'Clear tasks';
+
+// Errors and notices.
+$string['notask'] = 'No task to add.';
