@@ -8,4 +8,4 @@ No local storage used so list is gone on refresh.
 
 Original concept here: https://www.udemy.com/course/modern-javascript-from-the-beginning/
 
-Learn to programme Moodle plugins at: https://www.moodlebites.com/# moodle_block-course_tasks
+Learn to programme Moodle plugins at: https://www.moodlebites.com/
