@@ -1,6 +1,6 @@
 // Simplified from code by: https://www.udemy.com/user/brad-traversy/
 import * as Str from 'core/str';
-var error = [ {key:'notask', component: 'block_coursetasks'}];
+var error = [ {key:'notask', component: 'block_course_tasks'}];
 
 // Define UI elements.
 const form = document.querySelector("#block_course_tasks-task-form");
@@ -35,8 +35,9 @@ function addTask() {
         link.innerHTML = '<i class="fa fa-times"></i>';
 
         li.appendChild(link);
-
         tasklist.appendChild(li);
+        messages.innerHTML = " ";
+
     } else {
         Str.get_strings(error).then(function(result) {
             messages.innerHTML = result.toString();
