@@ -17,12 +17,12 @@
 /**
  * block_course tasks main file
  *
- * @package   block_coursetasks
+ * @package   block_course_tasks
  * @copyright  2021 Richard Jones <richardnz@outlook.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @see https://www.udemy.com/user/brad-traversy/
  */
-use \block_coursetasks\local\coursetasks;
+use \block_course_tasks\local\course_tasks;
 defined('MOODLE_INTERNAL') || die();
 
 /**
@@ -30,12 +30,12 @@ defined('MOODLE_INTERNAL') || die();
  *
  */
 
-class block_coursetasks extends block_base {
+class block_course_tasks extends block_base {
     /**
      * Initialize our block with a language string.
      */
     public function init() {
-        $this->title = get_string('pluginname', 'block_coursetasks');
+        $this->title = get_string('pluginname', 'block_course_tasks');
     }
 
     public function get_content() {
@@ -53,10 +53,10 @@ class block_coursetasks extends block_base {
         // OK let's add some content.
         $this->content = new stdClass();
         $this->content->footer = '';
-        $header = get_string('listing', 'block_coursetasks');
+        $header = get_string('listing', 'block_course_tasks');
 
         // returns html from class and template of same name.
-        $this->content->text = $OUTPUT->render(new coursetasks($this->page->course->id));
+        $this->content->text = $OUTPUT->render(new course_tasks($this->page->course->id));
 
         return $this->content;
     }

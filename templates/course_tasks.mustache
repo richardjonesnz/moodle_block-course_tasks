@@ -16,7 +16,7 @@
 }}
 
 {{!
-    @template block_coursetasks/course_users
+    @template block_course_tasks/course_users
 
     This template renders the content for the block.
 
@@ -40,17 +40,18 @@
 }}
 
 <div id="main" class="container">
-    <form id="block_coursetasks-task-form">
+    <form id="block_course_tasks-task-form">
         <div class="input-field">
-            <input type="text" name="task" id="block_coursetasks-task">
+            <input type="text" name="task" id="block_course_tasks-task">
             <input type="submit" value="{{addbutton}}" class="btn btn-primary">
         </div>
     </form>
-    <h4 id="block_coursetasks-task-title">{{listing}}</h4>
-    <ul class="block_coursetasks-collection list-group"></ul>
-    <a href="#" class="block_coursetasks-clear-tasks btn btn-warning">{{clearbutton}}</a>
+    <h4 id="block_course_tasks-task-title">{{listing}}</h4>
+    <ul class="block_course_tasks-collection list-group"></ul>
+    <p id="block_coursetasks-messages"></p>
+    <a href="#" class="block_course_tasks-clear-tasks btn btn-warning">{{clearbutton}}</a>
     {{#js}}
-    require(['block_coursetasks/tasklist'],
+    require(['block_course_tasks/tasklist'],
         function(module) {
             module.get_tasks();
         }

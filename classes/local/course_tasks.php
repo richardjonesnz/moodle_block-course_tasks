@@ -15,14 +15,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * block_coursetasks course users output class
+ * block_course_tasks course users output class
  *
- * @package   block_coursetasks
+ * @package   block_course_tasks
  * @copyright  2021 Richard Jones <richardnz@outlook.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @see https://www.udemy.com/user/brad-traversy/
  */
-namespace block_coursetasks\local;
+namespace block_course_tasks\local;
 
 use renderable;
 use renderer_base;
@@ -30,12 +30,12 @@ use templatable;
 use stdClass;
 
 /**
- * block coursetasks: Create a new renderable object
+ * block course_tasks: Create a new renderable object
  *
  * @copyright  2021 Richard Jones <richardnz@outlook.com>
  */
 
-class coursetasks implements renderable, templatable {
+class course_tasks implements renderable, templatable {
 
     protected $courseid;
 
@@ -49,9 +49,9 @@ class coursetasks implements renderable, templatable {
         $data = new stdClass();
 
         // UI strings for Mustache.
-        $data->addbutton = get_string('btn_add_task', 'block_coursetasks');
-        $data->listing = get_string('listing', 'block_coursetasks');
-        $data->clearbutton = get_string('btn_clear_tasks', 'block_coursetasks');
+        $data->addbutton = get_string('btn_add_task', 'block_course_tasks');
+        $data->listing = get_string('listing', 'block_course_tasks');
+        $data->clearbutton = get_string('btn_clear_tasks', 'block_course_tasks');
 
         return $data;
     }

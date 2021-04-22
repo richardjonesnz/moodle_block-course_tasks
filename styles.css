@@ -1,7 +1,7 @@
 /* Styles for task list */
-.block_coursetasks-delete-item {
+.block_course_tasks-delete-item {
     float:right;
 }
-.block_coursetasks-clear-tasks {
+.block_course_tasks-clear-tasks {
     margin-top: 5px;
 }

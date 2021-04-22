@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 /**
- * @package block_coursetasks permissions.
+ * @package block_course_tasks permissions.
  * @copyright 2021 Richard Jones <richardnz@outlook.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @see https://www.udemy.com/user/brad-traversy/
@@ -24,7 +24,7 @@ defined('MOODLE_INTERNAL') || die();
 $capabilities = array(
 
     // Specified user can add to courses.
-    'block/coursetasks:addinstance' => [
+    'block/course_tasks:addinstance' => [
         'riskbitmask' => RISK_SPAM | RISK_XSS,
         'captype' => 'write',
         'contextlevel' => CONTEXT_BLOCK,

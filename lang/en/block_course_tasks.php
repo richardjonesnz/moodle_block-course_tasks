@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * block_coursetasks language file
+ * block_course_tasks language file
  *
- * @package   block_coursetasks
+ * @package   block_course_tasks
  * @copyright  2021 Richard Jones <richardnz@outlook.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @see https://www.udemy.com/user/brad-traversy/
